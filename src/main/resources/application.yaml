@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: spring-boot-feature-toggle-starter
+
+feign:
+  url: ${FEATURE_TOGGLE_BASE_URL:localhost}
+feature-toggle:
+  enabled: ${FEATURE_TOGGLE_ENABLED:false}
